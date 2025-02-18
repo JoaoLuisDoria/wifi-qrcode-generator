@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WIFI QR Code Generator</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<!-- https://goqr.me/api/ -->
+	</head>
+	<body>
+		<form>
+			<h2>wifi login</h2>
+			<div class="internal">
+				<img width="164" src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=todo" alt="" />
+
+				<div class="inputs">
+					<label>
+						<span>Network Name</span>
+						<input type="text" class="ssid" placeholder="Wifi Network Name" />
+					</label>
+					<label>
+						<span>Password</span>
+						<div class="psw-wrapper">
+							<input type="password" class="password" placeholder="Password" />
+							<button type="button" class="togglePSW">
+								<img src="media/eye_open.svg" alt="Show Password" />
+							</button>
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<p>📸 Point your phone's camera at the qrcode to connect to Wifi</p>
+
+			<button type="button" class="printCard">Print Wifi Card</button>
+		</form>
+	</body>
+</html>
