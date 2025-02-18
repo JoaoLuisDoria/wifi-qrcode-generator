@@ -69,3 +69,15 @@ input {
 	height: auto;
 	width: 100%;
 }
+
+@media (max-width: 550px) {
+	h2 {
+		text-align: center;
+	}
+
+	.internal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
